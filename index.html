@@ -157,7 +157,7 @@
                     console.log(result[i])
                     let kid = document.createElement('div')
                     kid.innerHTML = `<h3 class="col-12">${result[i]}</h3>`
-                    kid.className = "mb-3"
+                    kid.className = "mb-3 ml-3 row"
                     parent.appendChild(kid)
 
 
@@ -172,8 +172,8 @@
                     for (let j = 0; j < movies.length; j++) {
                         if (result[i] === movies[j].category) {
                             let child = document.createElement('div');
-                            child.className = "d-flex flex-wrap-nowrap"
-                            child.innerHTML = `<a <a href="./details.html?movieId=${movies[j]._id}&movieCategory=${movies[j].category}">><img class="pr-2" src=${movies[j].imageUrl} height="200px"></a>`
+                            child.className = ""
+                            child.innerHTML = `<div><a href="./details.html?movieId=${movies[j]._id}&movieCategory=${movies[j].category}"><img class="pr-2" src=${movies[j].imageUrl} height="200px"></a></div>`
                             /*`
           <div class="card" style="width: 18rem;">
             <img src="${movies[j].imageUrl}" class="card-img-top" alt="..."></img>
